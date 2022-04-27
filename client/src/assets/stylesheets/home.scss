@@ -1,0 +1,32 @@
+.home {
+    display: flex;
+    justify-content: center;
+
+    &_left {
+        overflow: auto;
+        resize: both;
+        min-width: 150px;
+        overflow: auto;
+        border: 1px solid;
+        height: 50vh;
+    }
+
+    &_disabled {
+        background: grey;
+        color: white;
+        text-align: center;
+        width: 300px;
+    }
+
+    &_right {
+        overflow: auto;
+        resize: both;
+        border: 1px solid black;
+        height: 50vh;
+
+        &_row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}

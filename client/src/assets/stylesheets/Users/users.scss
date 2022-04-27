@@ -1,0 +1,30 @@
+.users {
+    
+    input {
+        border: none;
+        padding: 6px;
+        border-right:1px solid black ;
+        outline: none;
+    }
+
+    &_list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;;
+
+        &_item {
+            border-bottom: 1px solid;
+            padding: 6px;
+            cursor: pointer;
+            &_active {
+                background-color: $light-blue;
+            }
+        }
+
+        &_control {
+            padding: 0;
+            border: 0;
+            border-bottom: 1px solid;
+        }
+    }
+}
